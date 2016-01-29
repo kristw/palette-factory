@@ -12,8 +12,31 @@ $ npm install -g palette-factory
 Then
 
 ```sh
-$ palette-factory input/palette.scss --type js,md,html --output output/palette
+$ palette-factory input/palette.scss --type js,html --output output/name
 ```
+
+Input
+
+```sass
+// # Colors
+// ## Test
+$blue: #0066ff;
+$dark-blue: #0055ff;
+$dark-blue2: lighten($dark-blue, 30%);
+```
+
+Output
+
+```js
+export var colors = {
+// # Colors
+// ## Test
+blue: '#0066ff',
+darkBlue: '#0055ff',
+darkBlue2: '#99bbff',
+};
+```
+
 
 ## Library Usage
 
