@@ -15,7 +15,9 @@ Then
 $ palette-factory input/palette.scss --type js,html --output output/name
 ```
 
-Input
+#### Input (.scss)
+
+The input is a `.scss` file, with a special property that you can use markdown in the comments. However only `// ...` syntax is allowed for comments, not `/* ... */`.
 
 ```sass
 // # Colors
@@ -25,7 +27,9 @@ $dark-blue: #0055ff;
 $dark-blue2: lighten($dark-blue, 30%);
 ```
 
-Output
+#### Output (.js)
+
+Colors are ready to use as variables in javascript.
 
 ```js
 export var colors = {
@@ -36,6 +40,12 @@ darkBlue: '#0055ff',
 darkBlue2: '#99bbff',
 };
 ```
+
+#### Output (.html)
+
+A vanilla preview page. You can easily add style to make it looks nicer.
+
+<img src="images/html.png" width="300">
 
 
 ## Library Usage
