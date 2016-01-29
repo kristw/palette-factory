@@ -1,4 +1,4 @@
-# palette-factory [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# palette-factory [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > For a given color palette, generate color files for use in different languages and a preview page
 
 ## Command-line Usage
