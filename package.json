@@ -1,0 +1,56 @@
+{
+  "name": "palette-factory",
+  "version": "0.0.0",
+  "description": "For a given color palette, generate color files for use in different languages and a preview page",
+  "homepage": "",
+  "author": {
+    "name": "Krist Wongsuphasawat",
+    "email": "krist.wongz@gmail.com",
+    "url": "http://kristw.yellowpigz.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "palette",
+    "color",
+    "swatch"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "babel-eslint": "^4.1.6",
+    "del": "^2.0.2",
+    "eslint-config-xo-space": "^0.7.0",
+    "eslint-plugin-babel": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "kristw/palette-factory",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "Apache-2.0",
+  "bin": "dist/cli.js",
+  "dependencies": {
+    "lodash": "^4.0.1",
+    "marked": "^0.3.5",
+    "meow": "^3.7.0",
+    "node-sass": "^3.4.2"
+  }
+}
